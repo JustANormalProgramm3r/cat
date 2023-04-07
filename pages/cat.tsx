@@ -1,6 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
+import Link from 'next/link';
 import Router from 'next/router';
 
 
@@ -22,7 +23,7 @@ export default function catPage({ cats }: any) {
           <img src={cats[0]['url']}/>
         </div>
         <div className={styles.button}>
-          <a href='/cat'>Get a new cat</a>
+          <Link href='/cat'>Get a new cat</Link>
         </div>
       </main>
     </>
