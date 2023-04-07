@@ -16,9 +16,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.test2}>
-          <a href='/cat'>
+          <link href='/cat'>
             secret (click)
-          </a>
+          </link>
         </div>
       </main>
     </>
