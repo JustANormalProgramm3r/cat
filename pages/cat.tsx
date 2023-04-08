@@ -9,6 +9,7 @@ function randomIntFromInterval(min: number, max: number) { // min and max includ
 
 export default function catPage() {
   const cat = require(`../public/cats/${randomIntFromInterval(1, 2023)}.png`);
+  console.log(cat);
   return (
     <>
       <Head>
@@ -22,14 +23,14 @@ export default function catPage() {
             Cat 🤑
           </p>
         </div>
-        <div>
+        <div className={styles.button} role='button'>
+          <Link href='/cat'>Get a new cat</Link>
+        </div>
+        <div className={styles.image}>
           <Image
             src={cat}
             alt="Picture of the author"
           />
-        </div>
-        <div className={styles.button}>
-          <Link href='/cat'>Get a new cat</Link>
         </div>
       </main>
     </>
