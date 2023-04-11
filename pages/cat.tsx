@@ -29,7 +29,7 @@ export default function catPage() {
         <div className={styles.image}>
           <Image
             src={cat}
-            alt="Picture of the author"
+            alt="i love cats"
           />
         </div>
       </main>
