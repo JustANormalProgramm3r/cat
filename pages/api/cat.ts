@@ -12,7 +12,6 @@ type Data = {
   path: string;
   width: any;
   height: any;
-  daddy: string;
 };
 
 export default function handler(
@@ -28,6 +27,5 @@ export default function handler(
     path: `https://cute-cat-generator.vercel.app/cats/${cat}`,
     width: dimensions.width,
     height: dimensions.height,
-    daddy: "i love cats"
   });
 }
