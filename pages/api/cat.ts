@@ -10,8 +10,8 @@ function randomIntFromInterval(min: number, max: number) {
 
 type Data = {
   path: string;
-  width: number;
-  height: number;
+  width: any;
+  height: any;
   daddy: string;
 };
 
