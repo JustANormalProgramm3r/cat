@@ -16,6 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.middle}>
+          <h1>
+            Hello :)
+          </h1>
+        </div>
         <div className={styles.test2}>
           <Link href='/cat'>
             secret (click)
